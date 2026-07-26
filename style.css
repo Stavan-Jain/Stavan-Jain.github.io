@@ -1,0 +1,229 @@
+:root {
+  color-scheme: light dark;
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-border: #e5e5e5;
+  --color-accent: #2b5fd9;
+  --measure: 640px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #141414;
+    --color-text: #e6e6e6;
+    --color-muted: #9b9b9b;
+    --color-border: #2b2b2b;
+    --color-accent: #7aa2f7;
+  }
+
+  /* No accent colour clears 3:1 against body text on a dark background while
+     staying readable on it, so links in content need a non-colour cue here.
+     Nav links sit outside main; entry titles are bold, standalone, and read
+     as headings, so both are identifiable without one. */
+  main a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  main .entry-title a {
+    text-decoration: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Primary link — the one link on a page that should draw the eye. */
+a.link-primary {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+a.link-primary:hover {
+  text-decoration-thickness: 2.5px;
+}
+
+/* Header / nav */
+
+header.site-header {
+  padding: 56px 0 24px;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.site-title:hover {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+nav.site-nav {
+  margin-top: 18px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav.site-nav a {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--color-accent);
+}
+
+/* Main content */
+
+main {
+  padding: 8px 0 64px;
+  min-height: 40vh;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 40px 0 8px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  color: var(--color-muted);
+  margin-bottom: 32px;
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+/* Lists (projects, blog, links) */
+
+.entry-list {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+}
+
+.entry {
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.entry:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.entry-title {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.entry-meta {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin: 0 0 6px;
+}
+
+.entry-desc {
+  margin: 0;
+}
+
+.stub {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  border: 1px dashed var(--color-border);
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+/* Contact */
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-list li:first-child {
+  border-top: none;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 90px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* Footer */
+
+footer.site-footer {
+  padding: 32px 0 56px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+/* Blog post */
+
+.post-header {
+  margin-bottom: 32px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}

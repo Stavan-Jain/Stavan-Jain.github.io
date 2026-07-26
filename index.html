@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stavan Jain</title>
+  <meta name="description" content="Stavan Jain — CS PhD student at UW–Madison working on formal verification of quantum error correcting codes in the Lean proof assistant.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="index.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Stavan Jain</h1>
+      <p class="subtitle">First-year Computer Science PhD student at UW–Madison</p>
+
+      <p>
+        My research focuses on the <strong>formal verification</strong> of <strong>quantum error correcting codes</strong> using the <a href="https://lean-lang.org/">Lean</a> proof assistant. The properties these codes are claimed to have, such as distance, are often established by a solver or an informal argument rather than a proof, leaving the people who build compilers and architectures to take them on trust. My goal is to develop <a href="https://github.com/Stavan-Jain/QECLean" class="link-primary">QECLean</a>, a comprehensive formalized library for the theory of quantum error correction and a trusted base of knowledge the field can build on.
+      </p>
+
+      <p>
+        Once the theory is formalized, those properties become machine-checkable, which opens the door to searching for new codes rather than hand-designing them. I am building an LLM-driven pipeline that proposes and verifies candidates against QECLean, optimizing for both encoding rate and code distance. Every code it finds is physically realizable and has a formalized proof of its parameters.
+      </p>
+
+      <p>
+        I am advised by <a href="https://pages.cs.wisc.edu/~aws/">Aws Albarghouthi</a> and I'm involved with the <a href="https://madpl.cs.wisc.edu/">madPL</a> and <a href="https://quantum.cs.wisc.edu/">Quantum Computing</a> groups at UW–Madison.
+      </p>
+
+      <p class="muted">
+        See <a href="projects.html">projects</a> or <a href="contact.html">get in touch</a>.
+      </p>
+    </main>
+    <footer class="site-footer">
+      &copy; <span id="year">2026</span> Stavan Jain
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

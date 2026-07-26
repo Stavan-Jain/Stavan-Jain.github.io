@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Stavan Jain</title>
+  <meta name="description" content="Projects and code by Stavan Jain, CS PhD student at UW–Madison working on formal verification of quantum error correcting codes in Lean.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Projects</h1>
+      <ul class="entry-list">
+        <li class="entry">
+          <p class="entry-title"><a href="https://github.com/Stavan-Jain/QECLean">QECLean</a></p>
+          <p class="entry-meta">2025-2026 &middot; Lean, mathlib</p>
+          <p class="entry-desc">
+            A formalization of quantum error correction in Lean 4, covering the stabilizer
+            formalism from Pauli groups and the binary symplectic representation up through
+            concrete code families. Includes a machine-checked proof that the
+            <em>L</em> &times; <em>L</em> toric code is a [[2<em>L</em>&sup2;, 2, <em>L</em>]]
+            stabilizer code for every <em>L</em> &ge; 2, via formalized homological distance
+            arguments, along with a verification of IBM's [[144, 12, 12]] gross code. Sorry-free.
+          </p>
+        </li>
+
+        <li class="entry">
+          <p class="entry-title"><a href="https://github.com/Stavan-Jain/linear_algebra_game">Linear Algebra Game</a></p>
+          <p class="entry-meta">2023&ndash;2024 &middot; Lean, Lean Game Maker</p>
+          <p class="entry-desc">
+            An interactive game that teaches linear algebra by having students prove theorems in
+            Lean. Levels introduce Linear Algebra
+            and the mechanics of machine-checked proof alongside each other.
+          </p>
+        </li>
+
+        <li class="entry">
+          <p class="entry-title"><a href="https://github.com/MAO3J1m0Op/algebra-in-lean">Algebra In Lean</a></p>
+          <p class="entry-meta">2024 &middot; Lean, mathlib</p>
+          <p class="entry-desc">
+            An interactive problem set that teaches abstract algebra through formalization in
+            Lean 4, covering logic-based reasoning, group axioms, homomorphisms, and subgroups.
+            I was one of three project managers for the team of seven that built it at Duke's
+            Math+ 2024.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      &copy; <span id="year">2026</span> Stavan Jain
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
