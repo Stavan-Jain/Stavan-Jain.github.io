@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stavan-jain.github.io/sitemap.xml
