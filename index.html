@@ -10,6 +10,7 @@
   <meta property="og:url" content="https://stavan-jain.github.io/">
   <meta property="og:title" content="Stavan Jain — Quantum Error Correction in Lean">
   <meta property="og:description" content="CS PhD student at UW–Madison working on formal verification of quantum error correcting codes in the Lean proof assistant.">
+  <meta property="og:image" content="https://stavan-jain.github.io/headshot.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
@@ -19,6 +20,7 @@
     "@type": "Person",
     "name": "Stavan Jain",
     "url": "https://stavan-jain.github.io/",
+    "image": "https://stavan-jain.github.io/headshot.jpg",
     "jobTitle": "PhD Student in Computer Science",
     "affiliation": {
       "@type": "CollegeOrUniversity",
@@ -53,8 +55,14 @@
     </header>
 
     <main>
-      <h1>Stavan Jain</h1>
-      <p class="subtitle">First-year Computer Science PhD student at UW–Madison</p>
+      <div class="intro">
+        <img class="headshot" src="headshot.jpg" width="120" height="120"
+             alt="Stavan Jain in graduation cap and gown">
+        <div class="intro-text">
+          <h1>Stavan Jain</h1>
+          <p class="subtitle">First-year Computer Science PhD student at UW–Madison</p>
+        </div>
+      </div>
 
       <p>
         My research focuses on the <strong>formal verification</strong> of <strong>quantum error correcting codes</strong> using the <a href="https://lean-lang.org/">Lean</a> proof assistant. The properties these codes are claimed to have, such as distance, are often established by a solver or an informal argument rather than a proof, leaving the people who build compilers and architectures to take them on trust. My goal is to develop <a href="https://github.com/Stavan-Jain/QECLean" class="link-primary">QECLean</a>, a comprehensive formalized library for the theory of quantum error correction and a trusted base of knowledge the field can build on.
